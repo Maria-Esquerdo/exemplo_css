@@ -1,0 +1,71 @@
+/* Pseudo-seletor de Filho-único => Seleciona um elemento que seja o único elemento
+ dentro de outro: :only-child */
+
+/* Você pode selecionar qualquer elemento que seja o único elemento dentro de seu elemento pai.
+Não seleciona a única ocorrência de um determinado tipo de elemento dentro de outro.
+Seleciona apenas os elementos daquele determinado tipo se eles forem filhos únicos dos 
+elementos pais. */
+
+/* Exemplos
+Span:Only-Child seleciona os elementos do span que são o único filho de algum outro elemento.
+ul Li:Filho único seleciona o único elemento li que está em um ul. */
+
+/* Exemplo HTML: 
+<div class="container">
+    <p>Sou o único filho desta div</p>
+</div>
+
+<div class="container">
+    <p>Primeiro filho</p>
+    <p>Segundo filho</p>
+</div>
+
+<ul>
+    <li>Único item da lista</li>
+</ul>
+
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+</ul>
+
+<article>
+    <h1>Título único</h1>
+</article>
+
+<article>
+    <h1>Título</h1>
+    <p>Parágrafo</p>
+</article>
+*/
+
+/* Para selecionar todo p que for filho único de um elemento:  */
+    p:only-child
+    {
+        /* Nesse caso, seleciona apenas o parágrafo dentro de "container". */
+    }
+
+/* Para selecionar todo li que for filho único de um elemento: */
+    li:only-child
+    {
+        /* Seleciona apenas, nesse caso, o li dentro de ul. */
+    }
+
+/* Para selecionar div's que são filhas-únicas: */
+    div:first-child
+    {
+        /* Nesse caso, não há ocorrência. */
+    }
+
+/* Para selecionar elementos dentro de classes que são filhos-únicas: */
+    .container :first-child
+    {
+        /* Seleciona qualquer elemento que for filho único dentro de container, nesse caso, 
+        o parágrafo. */
+    }
+
+/* Para selecionar qualquer elemento, de qualquer tipo, que for filho único dentro de article: */
+    article :only-child
+    {
+        /* Nesse caso, seleciona o h1 ("título único") dentro de article. */
+    }
