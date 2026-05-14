@@ -1,0 +1,59 @@
+/*Combinando seletores com vírgula: A, B*/
+
+/*Graças à tecnologia Shatner, isso seleciona todos os elementos A e B. 
+Você pode combinar qualquer seletor dessa forma, e pode especificar mais de dois.*/
+
+/*p, .fun seleciona todos os elementos p assim como todos os elementos com class="fun"
+A, P, Div seleciona todos os elementos A, P e Div*/
+
+/* Exemplo HTML:
+<header>
+    <h1>Título Principal</h1>
+    <h2>Subtítulo</h2>
+</header>
+
+<main>
+    <p>Parágrafo normal</p>
+    <p class="destaque">Parágrafo em destaque</p>
+    <div class="card">
+        <h3 class="titulo">Card 1</h3>
+        <p>Texto do card</p>
+    </div>
+    <div class="card">
+        <h3 class="titulo">Card 2</h3>
+        <p>Outro texto</p>
+    </div>
+    <div id="card_especial">
+        <p>Card especial</p>
+    </div>
+</main>
+
+<footer>
+    <p>Rodapé</p>
+    <a href="#">Link</a>
+</footer>
+*/
+
+/*Combina títulos: */
+h1, h2, h3
+{
+    /*Seleciona todas as tags h1, h2 e h3 dentro do código.*/
+}
+
+/* tag + classe: */
+p, .card
+{
+    /*Seleciona tanto os elementos p, quando os elementos de classe "card"*/
+}
+
+/* id + classe + tag */
+#card_especial, .card, footer
+{
+    /*Seleciona esses três elementos ao longo de todo o código*/
+}
+
+/* elementos dentro de elementos:  */
+.card.titulo, .card p
+{
+    /*Seleciona título dentro de carp e p dentro de card.*/
+}
