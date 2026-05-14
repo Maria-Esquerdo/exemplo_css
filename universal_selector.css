@@ -23,7 +23,7 @@
          /* Seleciona todos os elementos da página. */
     }
 
-/* Para selecionar todos os elementos filhos (descendentes de dois níveis) */
+/* Para selecionar todos os elemento netos (descendentes de dois níveis) */
     * *{
         /* Seleciona todos os descendentes de dois niveis da página. */
     }
