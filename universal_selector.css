@@ -1,0 +1,48 @@
+/*Seletor universal: " * " */
+/* Você pode selecionar todos os elementos com o seletor universal! */
+/* p * seleciona qualquer elemento dentro de todos os p elementos. */
+
+/*Exemplo em HTML: 
+<div class="container">
+    <h1>Título</h1>
+    <p>Parágrafo com <span>span</span> e <strong>strong</strong></p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+</div>
+
+<div class="card">
+    <h3>Card</h3>
+    <p>Texto do card</p>
+</div>
+*/
+
+/* Para selecionar todos os elementos: */
+    *{
+         /* Seleciona todos os elementos da página. */
+    }
+
+/* Para selecionar todos os elementos filhos (descendentes de dois níveis) */
+    * *{
+        /* Seleciona todos os descendentes de dois niveis da página. */
+    }
+
+/* Para selecionar todos os elementos dentro de uma classe: */
+    .card *
+    {
+        /* Seleciona todos os elementos dentro de todos os card's. */
+    }
+
+/*Para selecionar todos os elementos dentro de uma tag/um elemento: */
+    p *
+    {
+        /*Seleciona todos os elementos dentro de todos os elementos p. */
+    }
+
+    body * 
+    {
+        /* Seleciona todos os elementos dentro de body. */
+    }
+
+/* OBS=> Esse seletor é útil pra definir uam estilização básica global. */
