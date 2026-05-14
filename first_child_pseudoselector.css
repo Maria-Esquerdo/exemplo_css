@@ -1,0 +1,67 @@
+/* Pseudo-seletor de Primeiro Filho => Selecione um primeiro elemento filho dentro 
+de outro elemento:   :first-child */
+
+/* Você pode selecionar o primeiro elemento filho. Um elemento filho é qualquer elemento
+ que está diretamente aninhado em outro elemento. Você pode combinar esse pseudo-seletor 
+ com outros seletores. 
+ Não seleciona a primeira ocorrência daquele certo tipo dentro do elemento que foi criado,
+ seleciona o elemento daquele certo tipo SE ele for o primeiro filho direto do elemento pai.*/
+
+/* Exemplos
+:first-child seleciona todos os elementos do first child.
+p:first-child seleciona todos os elementos p do primeiro filho. */
+
+/* Exemplo HTML: 
+<div class="container">
+    <p>Primeiro filho (p)</p>
+    <p>Segundo filho (p)</p>
+    <div>Div terceiro filho</div>
+</div>
+
+<ul>
+    <li>Primeiro item da lista</li>
+    <li>Segundo item</li>
+    <li>Terceiro item</li>
+</ul>
+
+<article>
+    <h1>Título primeiro filho</h1>
+    <p>Parágrafo segundo filho</p>
+</article>
+
+<section>
+    <div>Div primeiro filho</div>
+    <p>Parágrafo segundo filho</p>
+    <p>Parágrafo terceiro filho</p>
+</section>*/
+*/
+
+/* Para selecionar os parágrafos que são primeiros filhos de algum elemento: */
+    p:first-child
+    {
+        /* Nesse caso, seleciona apenas o parágrafo da classe container. */
+    }
+
+/* Para selecionar os li's que são primeiros filhos: */
+    li:first-child
+    {
+        /* Nesse caso, seleciona, dentro de ul, apenas o primeiro item da lista */
+    }
+
+/* Para seleionar as div's que são primeiras filhas: */
+    div:first-child
+    {
+        /* Seleciona a primeira div dentro da section. */
+    }
+
+/* .Para selecionar o parágrafo que é primeiro filho dentro da classe container: */
+    .container p:first-child
+    {
+        /* Nesse caso, seleciona apenas o p primeiro filho na div de classe container. */
+    }
+
+/* Para selecionar o primeiro filho, de qualquer tipo, dentro de qualquer article: */
+    article :first-child
+    {
+        /* Nesse caso, seleciona h1 dentro de article. */
+    }
