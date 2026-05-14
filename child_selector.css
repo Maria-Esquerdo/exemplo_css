@@ -1,0 +1,70 @@
+/* Seletor de Filhos Diretos => Selecione os filhos diretos de um elemento
+    A > B 
+B precisa estar exatamente um nível abaixo de A na hierarquia.*/
+
+/* Você pode selecionar todos os irmãos de um elemento que o seguem.
+ Isso é como o Seletor Adjacente (A + B), exceto que ele reúne todos os seguintes elementos 
+ em vez de um. */
+
+/* Exemplos
+A > B seleciona todos os B que são filhos diretos A */
+
+/* Exemplo HTML: 
+<div class="container">
+    <p>Parágrafo filho DIRETO</p>
+    <div>
+        <p>Parágrafo NETO (dentro de div)</p>
+    </div>
+    <span>Span filho DIRETO</span>
+    <ul>
+        <li>Item filho DIRETO da ul</li>
+        <li>Outro item</li>
+    </ul>
+</div>
+
+<article>
+    <h1>Título filho DIRETO</h1>
+    <section>
+        <h1>Título NETO (dentro de section)</h1>
+    </section>
+</article>
+
+<ul class="menu">
+    <li>Item 1
+        <ul>
+            <li>Subitem (não é filho direto do .menu)</li>
+        </ul>
+    </li>
+    <li>Item 2</li>
+</ul>
+*/
+
+
+/* Para selecionar filhos diretos de uma classe: */
+    .container > p
+    {
+        /*Nesse caso, seleciona apenas o parágrafo que pe filho direto dessa classe. 
+        O parágrafo dentro da div não é selecionado.*/
+    }
+
+/* Para selecionar todos os filhos diretos de uma classe: */
+    .container > *
+    {
+        /*Seleciona todos os filhos diretos da classe container (p, div, span e ul).
+        O parágrafo neto e os li's netos não são selecionados */
+    }
+
+/* Para selecionar o filho direto de uma lista: */
+    ul > li
+    {
+        /*Seleciona todos os filhos diretos de todos os ul's, mesmo os que possuem classe definida
+        Então, nesse caso, seleciona: em container, o li que é filho direto e, em "menu", 
+        seleciona os itens 1 e 2. */
+    }
+
+/* Para selecionar filho direto de um article: */
+    article > h1
+    {
+        /* Seleciona apenas h1 que é filho direto */
+    }
+
