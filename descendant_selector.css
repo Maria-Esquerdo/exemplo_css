@@ -1,0 +1,41 @@
+/*Seletor de Descendentes => Seleciona um elemento dentro de 
+outro elemento.
+    A B */
+
+/*Seleciona todos B Dentro de A. B é chamado
+ de descendente porque está dentro de outro elemento.*/
+
+/*Exemplos
+p forte seleciona todos os elementos fortes 
+que estão dentro de qualquer p
+#fancy span seleciona quaisquer elementos do span 
+que estejam dentro do elemento com id="fancy"*/
+
+/*Exemplo no HTML:
+<div class="menu">
+    <ul>
+        <li>Home</li>
+        <li>Sobre</li>
+    </ul>
+</div>
+<section>
+    <p>Texto normal</p>
+    <div>
+        <p>Texto dentro de div</p>
+    </div>
+</section>*/
+ul li
+{
+    /*Todos os li's dentro de todos os ul's são selecionados*/
+}
+
+div#menu ul li
+{
+    /*apenas os elementos li, dentro da ul, dentro da div 
+    de id "menu" são selecionadas.*/
+}
+
+section p
+{
+    /*seleciona p dentro de section.*/
+}
