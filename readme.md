@@ -1,0 +1,1 @@
+Este projeto não é um projeto prático, de fato. Mas sim um projeto direcionado a aprender a linguagem de estilização CSS com exemplos práticos através do jogo "CSS Diner".
