@@ -1,0 +1,41 @@
+/*Seletor de Classes: 
+                        .nome da classe*/
+
+/*O seletor de classes seleciona todos os elementos 
+com esse atributo de classe. Elementos só podem ter um ID, mas muitas classes.*/
+
+/*Exemplos
+.neato seleciona todos os elementos com class="neato"*/
+
+/*OBS => Classe é um identificador de tags, assim como id, mas pode ser reutilizado várias 
+vezes dentro da mesma página, é menos específico e tem menos prioridade.*/
+
+/*Exemplo no HTML:
+<div class="menu-principal">
+    <ul>
+        <li>Home</li>
+        <li>Sobre</li>
+        <li>Contato</li>
+    </ul>
+</div>
+
+<div class="card">
+    <h3 class="titulo">Meu Card</h3>
+    <p>Texto do <span>card</span> aqui</p>
+</div>
+
+<div class="card">
+    <h3 class="titulo">Outro Card</h3>
+    <p>Mais um <span>exemplo</span></p>
+</div>
+*/
+
+.menu-principal
+{
+    /*Seleciona os elementos dentro de menu-principal*/
+}
+
+.card
+{
+    /*Seleciona os elementos dentro de card, em ambas as div's.*/
+}
