@@ -1,0 +1,29 @@
+/* Seletor de Irmãos Adjacentes: Selecione um elemento que siga diretamente outro elemento
+  A + B */
+
+/* O sinal de mais (+) seleciona o elemento que é imediatamente 
+depois de outro elemento (irmão adjacente, vizinho direto) */
+
+/*Exemplo HTML: 
+<section class="receita">
+    <h2>Bolo de Chocolate</h2>
+    <p>Ingredientes: farinha, ovos, chocolate</p>
+    <p>Modo de preparo: misturar tudo e assar</p>
+    
+    <h2>Bolo de Cenoura</h2>
+    <p>Ingredientes: cenoura, farinha, ovos</p>
+    <p>Modo de preparo: bater no liquidificador</p>
+</section>
+*/
+
+/*Para selecionar o elemento imediatamente depois (não filho, irmao), o irmão adjacente: */
+    .receita h2 + p
+    {
+        /*Dentro da classe receita seleciona o irmão adjacente a h2, ou seja, o p 
+        imediatamente abaixo de h2.
+        Nesse caso, seleciona: Ambos os <p>Ingredientes: ... </p>*/
+    }
+
+
+
+
