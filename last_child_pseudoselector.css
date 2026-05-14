@@ -1,0 +1,69 @@
+/* Pseudo-seletor de Último Filho => Seleciona o último elemento dentro de outro elemento
+    :last-child */
+
+/* Você pode usar esse seletor para selecionar um elemento que seja o último 
+filho dentro de outro elemento. Não seleciona a última ocorrência do determinado tipo,
+mesmo não endo último filho do elemento pai. Seleciona os elementos do determinado tipo 
+se forem últimos filhos. */
+
+/* OBS → Nos casos em que há apenas um elemento, esse elemento conta como primo-filho,
+ filho único e último-filho! */
+
+/* Exemplos:
+último-filho seleciona todos os elementos do último filho. */
+
+/* Exemplo HTML: 
+<div class="container">
+    <p>Primeiro filho</p>
+    <p>Segundo filho</p>
+    <p>Último filho (p)</p>
+</div>
+
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3 (último li)</li>
+</ul>
+
+<article>
+    <h1>Título</h1>
+    <p>Parágrafo</p>
+    <div>Último filho (div)</div>
+</article>
+
+<section>
+    <p>Parágrafo único (também é último)</p>
+</section>
+*/
+
+/* Para selecionar os parágrafos que são últimos filhos: */
+    p:last-child
+    {
+        /* Nesse caso, seleciona os parágrafos que são últimos filhos em container: 
+          e em section. */
+    }
+
+/* Para selecionar os li's que são últimos filhos: */
+    li:last-child
+    {
+        /* Nesse caso, seleciona o último elemento li em ul. */
+    }
+
+/* Para selecionar as div's que são últimas filhas: */
+    div:last-child
+    {
+        /* Nesse caso, seleciona a div sentro de article. */
+    }
+
+/* Para selecionar os últimos filhos dos elementos de determinada classe: */
+    .container p:last-child
+    {
+        /* Nesse caso, seleciona os parágrafos que são últimos filhos dos elementos que são 
+        da classe "container". */
+    }
+
+/* Para selecionar o último filho de qualquer article: */
+    article :last-child
+    {
+        /* seleciona todos os últimos filhos, de qualquer tipo, de todos os articles. */
+    }
