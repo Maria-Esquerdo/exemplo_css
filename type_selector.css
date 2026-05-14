@@ -1,0 +1,25 @@
+/*Seletor de tipo (A): */
+
+/*Seleciona todos os elementos do tipo A. 
+Tipo refere-se ao tipo de etiqueta, então div, 
+p e ul são todos tipos de elementos diferentes.*/
+
+/*Exemplos:
+Div seleciona todos os elementos da div.
+p seleciona todos os p elementos.*/
+
+div
+{
+    /*Seleciona todos os elementos div no html,
+    independdente da classe deles.*/
+}
+
+p
+{
+    /*Seleciona todos os elementos p no html;*/
+}
+
+body
+{
+    /*Seleciona todos os elementos dentro do body.*/
+}
