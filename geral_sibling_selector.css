@@ -1,0 +1,51 @@
+/* Seletor Geral de Irmãos: Seleciona elementos que sigam outro elemento
+    A ~ B */
+
+/* Você pode selecionar todos os irmãos de um elemento que o seguem. 
+Isso é como o Seletor Adjacente (A + B), exceto que ele reúne todos os seguintes
+ elementos em vez de um. */
+
+/*Exemplos:
+A ~ B seleciona todos os B que seguem a A*/
+
+/* Exemplo HTML: 
+<article>
+    <h1>Título</h1>
+    <p>Primeiro parágrafo</p>
+    <p>Segundo parágrafo</p>
+    <div>Div qualquer</div>
+    <p>Terceiro parágrafo</p>
+</article>
+
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+
+<div class="card">
+    <h2>Subtítulo</h2>
+    <p>Texto 1</p>
+    <div>Div</div>
+    <p>Texto 2</p>
+    <p>Texto 3</p>
+</div>*/
+*/
+
+/* Para selecionar todos os parágrafos que seguem h1: */
+    h1 ~ p
+    {
+        /*Nesse caso, seleciona o primeiro, segundo e terceiro parágrafo depois de todos os h1*/
+    }
+
+/* Para selecionar todos os li que tem um li antes (a partir do 2º li): */
+    li ~ li
+    {
+        /* Nesse caso, seleciona os itens 2 e 3 */
+    }
+
+/* Para selecionar todos os elementos depois de h2: */
+    h2 ~ *
+    {
+        /*Nesse caso, seleciona todos os 3 parágrafos depois de h2 e a div. */
+    }
