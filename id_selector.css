@@ -1,0 +1,29 @@
+/*Selção de elementos previamente identificados por uma id 
+ou classe no html:  #id*/
+  
+/*Seleciona o elemento com um específico id. 
+Você também pode combinar o seletor de ID com o 
+seletor de tipos.*/
+
+/*Exemplos: 
+#cool seleciona qualquer elemento com id="cool"
+ul#long seleciona ul id="longo"*/
+
+/*Exemplo no HTML: 
+<div class = "inicio">
+    <h1 id="home">
+        ...
+    </h1>
+    <img src="" alt="logo">
+</div>*/
+
+#inicio
+{
+    /*seleciona elementos com id = "table"*/
+}
+
+img#logo
+{
+    /*seleciona elementos tem id="luxo" e que estão 
+    dentro do tipo placa. */
+}
