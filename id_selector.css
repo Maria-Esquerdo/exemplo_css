@@ -27,3 +27,7 @@ img#logo
     /*seleciona elementos tem id="luxo" e que estão 
     dentro do tipo placa. */
 }
+
+/*OBS => id é um identificador que só pode ser utilizado uma vez por 
+página e tem peso maior, tem maior prioridade.
+Pode ser usado como âncora (link direto para o elemento).*/
