@@ -1,0 +1,61 @@
+/* Podemos combinar o seletor universal com tags, elementos, classes, inclusive, 
+concatenadas, com elementos filhos. */
+
+/*Exemplo HTML: 
+<div class="card">
+    <h3>Título</h3>
+    <p>Parágrafo com <span>span</span> e <strong>strong</strong></p>
+    <div class="footer">
+        <small>Rodapé do card</small>
+    </div>
+</div>
+
+<ul class="lista">
+    <li>Item 1
+        <ul>
+            <li>Subitem 1</li>
+            <li>Subitem 2</li>
+        </ul>
+    </li>
+    <li>Item 2</li>
+</ul>
+
+<section id="galeria">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item destaque">Item 3</div>
+</section>
+
+<div class="container">
+    <p>Primeiro parágrafo</p>
+    <p>Segundo parágrafo</p>
+    <div>Div dentro</div>
+</div>
+*/
+
+/* Para selecionar todos os filhos diretos de uma determinada classe: */
+    .card > *
+    {
+        /* Seleciona todos os filhos diretos da(s) classe(s) card.
+        Então, no exemplo, seleciona h3, p, div, mas não small. */
+    }
+
+/* Para selecionar todos os elementos de segundo nível (netos) de uma determinada classe: */
+    .lista * *
+    {
+        /* Seleciona os elementos netos da(s) classe(s) lista. Nesse caso, seleciona apenas: 
+        ul dentro de lista. */
+    }
+
+/* Para selecionar todas as determinadas classes entro de um id:  */
+    #galeria * .item
+    {
+        /* Seleciona todos os elementos com classe "item" dentro da id glaleria */
+    }
+
+/* Para selecionar o primeiro filho, de qualquer elemento, dentro da section: */
+    section *:first-child
+    {
+        /*Nesse caso, seleciona apenas o item 1 dasection "galeria".
+        Se houvessem mais sections, cada primeiro filho de cada section seria selecionado. */
+    }
