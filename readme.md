@@ -1,1 +1,3 @@
-Este projeto não é um projeto prático, de fato. Mas sim um projeto direcionado a aprender a linguagem de estilização CSS com exemplos práticos através do jogo "CSS Diner".
+Este projeto não é um projeto prático, de fato. Mas sim um projeto direcionado a aprender a linguagem de estilização CSS com exemplos práticos baseado no jogo "CSS Diner".
+Funciona como um resumo/flash cards.
+Em andamento...
