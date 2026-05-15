@@ -64,3 +64,10 @@ a[href] seleciona todos os elementos a que possuem um atributo href="qualquer co
     {
         /* Seleciona todos os elementos href que seu valor termine com ".com" */
     }
+
+/* Selecionar todos os elementos com valor de atributo que contenha caracteres específicos 
+em qualquer lugar: */
+    [atributo*="valor"]
+    {
+        
+    }
