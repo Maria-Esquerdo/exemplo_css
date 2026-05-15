@@ -67,7 +67,8 @@ div:nth-of-type(2) seleciona a segunda instância de um div.
         /* Seleciona as segundas ocorrências de div's dentro de articles. */
     }
 
-/* Para selecionar de n em n a partir de um determinado elemento: */
+/* Para selecionar de n em n a partir de um determinado elemento:
+    :nth-of-type(An+B) */
     li:nth-of-type(2n+3)
     {
         /* Seleciona os elementos, de 2 em 2, começando do li de posição 3. */
