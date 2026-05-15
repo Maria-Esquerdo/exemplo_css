@@ -1,0 +1,54 @@
+/* Seletor Primeiro do Tipo => Selecione o primeiro elemento de um tipo específico
+    :first-of-type */
+
+/* Seleciona o primeiro elemento desse tipo dentro de outro elemento. Ou seja, seleciona as 
+primeiras ocorrÊncias do tipo declarado. */
+
+/* Exemplos
+Span:First-of-Type seleciona o primeiro intervalo em qualquer elemento. */
+
+/* Exemplo HTML: 
+<article>
+    <h1>Título</h1>
+    <p>Primeiro parágrafo</p>
+    <p>Segundo parágrafo</p>
+</article>
+
+<section>
+    <div>Div primeiro</div>
+    <p>Primeiro p (depois da div)</p>
+    <p>Segundo p</p>
+</section>
+
+<div class="container">
+    <h3>Subtítulo</h3>
+    <p>Texto 1</p>
+    <p>Texto 2</p>
+    <h3>Outro subtítulo</h3>
+    <p>Texto 3</p>
+</div>
+*/
+
+/* Para selecionar as primeiras ocorrências de parágrafos dentro de um elemento pai: */
+    p:first-of-type
+    {
+        /* Nesse caso, seleciona os primeiros p's dentro de: article, section e "container" */
+    }
+
+/* Para selecionar as primeiras ocorrências de um título: */
+    h3:first-of-type
+    {
+        /*Nesse caso, seleciona apenas o primeiro h3 dentro de "container". */
+    }
+
+/* Selecionar a primeira ocorrência de um tipo dentro de um certo elemento */
+    .container p:first-of-type
+    {
+        /* Nesse caso, seleciona a primeira ocorrência de p dentro de "container". */
+    }
+
+/* Para selecionar todos os primeiros elementos de cada tipo dentro de um elemento: */
+    article :first-of-type
+    {
+        /* Nesse caso, seleciona o h1 e o primeiro p. */
+    }
