@@ -1,0 +1,39 @@
+/* Enésimo Último Selecionador Filho => Selecione um elemento pela ordem em outro elemento,
+ contando do verso:  :nth-last-child(n) */
+
+/* Seleciona os filhos na parte inferior do pai. Isso é tipo n-filho, mas contando de trás! */
+
+/* Exemplos
+:nth-last-child(2) seleciona todos os elementos do penúltimo filho. */
+
+/* Exemplo HTML:
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+    <li>Item 6</li>
+</ul>
+
+<div class="tabela">
+    <p>Linha 1</p>
+    <p>Linha 2</p>
+    <p>Linha 3</p>
+    <p>Linha 4</p>
+    <p>Linha 5</p>
+</div>
+*/
+
+/* Para selecionar apenas o penúltimo li da lista: */
+    li:nth-last-child(2)
+    {
+        /* Seleciona o item 5, segundo item de trás pra frente. */
+    }
+
+/* Para selecionar o 4º parágrafo de trás pra frente: */
+    .table p:nth-last-child(4)
+    {
+        /* Seleciona o item 2, quarto item de trás pra frente. */
+    }
+
