@@ -1,0 +1,51 @@
+/* Seletor último do tipo => Seleciona o último elemento, dentro do elemento pai, de um
+ tipo específico:  :last-of-type */
+
+/* Seleciona cada último elemento desse tipo dentro de outro elemento.
+ Lembre-se que tipo se refere ao tipo de etiqueta, então p e span são tipos diferentes. */
+
+/* Exemplo:
+div:last-of-type seleciona o último div de cada elemento. */
+
+/* Exemplo HTML: 
+<article>
+    <p>Primeiro parágrafo</p>
+    <p>Segundo parágrafo</p>
+    <p>Último parágrafo (p)</p>
+    <div>Div depois do p</div>
+</article>
+
+<section>
+    <div>Div primeiro</div>
+    <p>Primeiro p</p>
+    <p>Último p (depois não tem mais p)</p>
+    <span>Span depois</span>
+</section>
+
+<div class="container">
+    <h3>Subtítulo 1</h3>
+    <p>Texto 1</p>
+    <h3>Subtítulo 2</h3>
+    <p>Texto 2</p>
+    <h3>Último h3</h3>
+</div>
+*/
+
+/* Selecionando os últimos parágrafos:  */
+    p:last-of-type
+    {
+        /* Seleciona os últimos p's dentro de cada elemento. */
+    }
+
+/* Selecionando um último elemento dentro de uma classe: */
+    .container h3:last-of-type
+    {
+        /* Seleciona o último h3 dentro das classes "container" */
+    }
+
+/* Selecionando o último elemento de cada tipo dentro de um elemento:  */
+    article :last-of-type
+    {
+        /* Seleciona cada último elemento de cada tipo dentro dos articles. */
+    }
+
