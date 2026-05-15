@@ -1,0 +1,54 @@
+/* Seletor Único do Tipo => Selecione elementos que sejam os únicos do tipo 
+deles dentro do elemento pai:   :only-of-type */
+
+/* Seleciona um elemento de um determinado tipo quando ele é o único elemento
+do seu tipo dentro do elemento pai. */
+
+/* Exemplos
+p span:apenas-de-tipo seleciona um vão dentro de qualquer p se for o único vão ali. */
+
+/* Exemplo HTML: 
+<div>
+    <p>Único p da div</p>
+    <span>Outro tipo existe, mas p é único </span>
+</div>
+
+<div>
+    <p>Primeiro p</p>
+    <p>Segundo p (tem dois p's)</p>
+</div>
+
+<ul>
+    <li>Único li</li>
+</ul>
+
+<ul>
+    <li>Item 1</li>
+    <li>Item 2 (tem dois li's)</li>
+</ul>
+
+<article>
+    <h1>Título</h1>
+    <p>Único parágrafo</p>
+    <div>Div</div>
+</article>
+*/
+
+/* Selecionando únicos parágrafos dentro de elementos:  */
+    p:only-of-type
+    {
+        /* Seleciona os únicos parágrafos existentes em div e article. */
+    }
+
+/* Selecionando únicos li's: */
+    li:only-of-type
+    {
+        /* Seleciona o unico li dentro da ul. */
+    }
+
+/* Selecionando todos os elementos únicos de qualquer tipo dentro de algum elemento: */
+    article :only-of-type
+    {
+        /* Seleciona os elementos que são os únicos do seu tipo dentro de todos os articles. */
+    }
+    
