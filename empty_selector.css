@@ -1,0 +1,34 @@
+/* Seletor vazio => Selecione elementos que não tenham filhos: 
+    :empty */
+
+/* Seleciona elementos que não têm outros elementos dentro deles. */
+
+/* Exemplos
+Div:empty seleciona todos os elementos vazios de div. */
+
+/* Exemplo HTML: 
+<div></div>                    ← vazio (selecionado)
+<div> </div>                   ← NÃO vazio (tem espaço)
+<div>texto</div>               ← NÃO vazio (tem texto)
+<div><span></span></div>       ← NÃO vazio (tem filho)
+
+<ul>
+    <li></li>                  ← vazio
+    <li>texto</li>             ← NÃO vazio
+    <li> </li>                 ← NÃO vazio (tem espaço)
+</ul>
+
+<p></p>                        ← vazio
+*/
+
+/* Selecionando div's vazias: */
+    div:empty
+    {
+        /*Seleciona divs vazias*/
+    }
+
+/* Selecionando todos os elementos vazios: */
+    * :empty
+    {
+        /* Nesse caso, seleciona todas as div's, li's e p's vazios. */
+    }
