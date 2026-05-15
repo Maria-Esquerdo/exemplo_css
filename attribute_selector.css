@@ -1,0 +1,66 @@
+/* Seletor de atributo => Selecione todos os elementos que possuem um atributo específico
+    [attribute] */
+
+/* Atributos aparecem dentro da tag de abertura de um elemento, assim: span 
+attribute="value". Um atributo nem sempre tem um valor, ele pode estar em branco! */
+
+/*Exemplos de atributos no HTML: 
+ type - tipo de input
+ href - link 
+ src - origem da imagem 
+ class - classe CSS 
+ id - identificador único 
+ disabled - campo desabilitado 
+ required - campo obrigatório 
+ target - onde abrir o link 
+*/
+
+/* Exemplos:
+a[href] seleciona todos os elementos a que possuem um atributo href="qualquer coisa".
+[type] seleciona todos os elementos que possuem type="qualquer coisa". */
+
+/* Exemplo HTML: 
+<input type="text" name="usuario">
+<input type="password" name="senha">
+<input type="submit" value="Enviar">
+
+<a href="https://www.google.com">Google</a>
+<a href="http://meusite.com">Meu Site</a>
+<a href="documento.pdf">PDF</a>
+
+<img src="foto.jpg" alt="Minha foto">
+<img src="icone.png" alt="Ícone">
+
+<div class="box destaque principal">Conteúdo</div>
+<div class="menu">Menu</div>
+ */
+
+/* Seleciona os elementos que possuem um tipo de atributo: */
+    [type]
+    {
+        /* Seleciona os elementos com atributo type. */
+    }
+
+/* Seleciona elementos específicos que possuem um tipo de atributo:  */
+    input[name]
+    {
+        /*Seleciona todos os elementos do tipo input que possuem o atributo name */
+    }
+
+/* Seleciona todos os elementos que possuem um valor específico de atributo: */
+    [name="usuario"]
+    {
+        /* Seleciona os elementos que possuem esse atributo, com esse valor */
+    }
+
+/* Selecionar todos os elementos com valor de atributo que comece com caracteres específicos:  */
+    [href^="https://"]
+    {
+        /* Seleciona todos os elementos href que seu valor comece com "https://" */
+    }
+
+/* Selecionar todos os elementos com valor de atributo que termine com caracteres específicos: */
+    [href$=".com"]
+    {
+        /* Seleciona todos os elementos href que seu valor termine com ".com" */
+    }
