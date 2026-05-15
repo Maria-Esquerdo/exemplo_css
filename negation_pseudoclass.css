@@ -1,0 +1,72 @@
+/* Pseudo-seletor de negação => Selecione todos os elementos que não correspondem
+ ao seletor de negação:  :not(A) */
+
+/* O que está ddfentro do parênteses é como um filtro, o que está dentro do parênteses 
+não é selecionado, todos os outros elementos sim. */
+
+/* Exemplos:
+:not(#fancy) seleciona todos os elementos que não possuem id="fancy".
+div:not(:primo-filho) seleciona toda div que não seja um primeiro filho.
+:not(.big, .medium) seleciona todos os elementos que não têm class="big" ou class="medium" */
+
+/* Exemplo HTML: 
+<div class="container">
+    <p>Parágrafo normal</p>
+    <p class="destaque">Parágrafo destaque</p>
+    <p>Outro normal</p>
+</div>
+
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+
+<div id="principal">Principal</div>
+<div>Secundário</div>
+<div>Outro</div>
+
+<form>
+    <input type="text">
+    <input type="submit">
+    <input type="button">
+</form>
+*/
+
+/* Para excluir um elemento:  */
+    :not(ul li)
+    {
+        /* Não seleciona todos os li's filhos de ul */
+    }
+
+/* Selecionando todos os elementos de um determinado tipo menos esse elemento que 
+tenha determinada classe: */
+    p:not(.destaque)
+    {
+        /* Seleciona todos os p's menos aqueles que possuem classe "destaque" */
+    }
+
+/* Selecionando todos os elementos menos aquele que é primeiro filho:  */
+    li:not(:first-child)
+    {
+        /* Seleciona todos os li's, menos o primeiro filho */
+    }
+
+/* Excluindo algum input: */
+    input:not([type="submit"])
+    {
+        /* Seleciona todos os inputs, menos o do tipo "submit" */
+    }
+
+/* Excluindo um elemento dentro de uma classe: */
+    .container:not(.container:notp)
+    {
+        /* Seleciona todos os elementos de classe "container", menos os parágrafos. */
+    }
+
+/* Seleciona todos os elementos menos algum: */
+    *:not(.menu)
+    {
+        /* Seleciona todos os elementos que não tenham a classe menu. */
+    }
+    
