@@ -1,0 +1,72 @@
+/* Pseudo-seletor N-child => Selecione um elemento pela ordem dele em outro elemento 
+    :nth-child(x) */
+
+/* Seleciona o n-ésimo elemento filho (Ex: 1º, 3º, 12º etc.) em outro elemento.
+ Seleciona elementos com base na sua posição dentro do elemento pai. */
+
+/* Exemplos
+:nh-child(8) seleciona todo elemento que é o 8º filho de outro elemento.
+div p:nth-child(2) seleciona o segundo p em cada div */
+
+/* Exemplo HTML: 
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+    <li>Item 6</li>
+</ul>
+
+<div class="tabela">
+    <p>Linha 1</p>
+    <p>Linha 2</p>
+    <p>Linha 3</p>
+    <p>Linha 4</p>
+    <p>Linha 5</p>
+</div>
+
+<table>
+    <tr><td>Linha 1</td></tr>
+    <tr><td>Linha 2</td></tr>
+    <tr><td>Linha 3</td></tr>
+</table>
+*/
+
+/* Para selecionar apenas o 3º li da lista: */
+    li:nth-child(3)
+    {
+        /* Seleciona o item 3. */
+    }
+
+/* Para selecionar elementos em posição ímpar: */
+    li:nth-child(odd)   /* ou li:nth-child(2n+1) */
+    {
+        /* Seleciona os itens em posições ímpares. */
+    }
+
+/* Para selecionar elementos em posição par: */
+    li:nth-child(even)  /* ou li:nth-child(2n) */
+    {
+        /* Seleciona os itens em posições pares. */
+    }
+
+/* Para selecionar posições múltiplas de 3: */
+    tr:nth-child(3n)
+    {
+        /* Seleciona as linhas da tabela múltiplas de 3. */
+    }
+
+/* Para selecionar elementos a partir de um tal elemento: */
+    .container :nth-child(n+2)
+    {
+        /* Seleciona, dentro de "container", os elementos a partir do 2º filho */
+    }
+
+/* Para selecionar até ul tal elemento: */
+    p:nth-child(-n+3)
+    {
+        /* Seleciona até o terceiro parágrafo. */
+    }
+
+    
