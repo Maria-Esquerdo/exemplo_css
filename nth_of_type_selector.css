@@ -1,0 +1,65 @@
+/* Seletor da nº ocorrência de um determinado tipo dentro de um elemento: 
+    :nth-of-type(n) */
+
+/* Seleciona um elemento específico com base em seu tipo e ordem 
+em outro elemento – ou em instâncias pares ou ímpares desse elemento. */
+
+/* Exemplos
+div:nth-of-type(2) seleciona a segunda instância de um div.
+.exemplo:n-de-tipo(ímpar) seleciona todas as instâncias ímpares de a a classe de exemplo. */
+
+/* Exemplo HTML: 
+<article>
+    <h1>Título</h1>
+    <p>Parágrafo 1</p>
+    <div>Div 1</div>
+    <p>Parágrafo 2</p>
+    <p>Parágrafo 3</p>
+    <div>Div 2</div>
+    <p>Parágrafo 4</p>
+</article>
+
+<section>
+    <h2>Subtítulo</h2>
+    <p>Texto A</p>
+    <p>Texto B</p>
+    <p>Texto C</p>
+</section>
+
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+</ul>
+*/
+
+/* Para selecionar a segunda ocorrência de parágrafos dentro de um elemento pai: */
+    p:nth-of-type(2)
+    {
+        /* Seleciona os segundos p's dentro de: article(parágrafo 2) e section (texto B) */
+    }
+
+/* Para selecionar parágrafos de ocorrência ímpar: */
+    p:nth-of-type(2n+1) /* ou: p:nth-of-type(odd) */
+    {
+        /* Seleciona parágrafos em posições ímpares dentro de cada elemento pai */
+    }
+
+/* Para selecionar parágrafos de ocorrência par: */
+    p:nth-of-type(2n) /* ou: p:nth-of-type(even) */
+    {
+        /* Seleciona parágrafos em posições pares dentro de cada elemento pai */
+    }
+
+/* Para selecionar li's de ocorrência múltipla de 3: */
+    p:nth-of-type(3n) 
+    {
+        /* Seleciona itens em posições múltipla de 3 dentro de cada elemento pai */
+    }
+
+/* Para selecionar a n-ésima ocorrência de um elemento dentro de outro: */
+    article div:nth-of-type(2)
+    {
+        /* Seleciona as segundas ocorrências de div's dentro de articles. */
+    }
